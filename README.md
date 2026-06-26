@@ -38,3 +38,40 @@ Nessa fase, o sistema pode publicar automaticamente uma nova versão da aplicaç
 Isso torna o processo muito mais rápido e reduz bastante a necessidade de tarefas manuais.
 
 ---
+## ⚙️ Como o GitHub Actions funciona?
+
+Um fluxo simples pode ser representado assim:
+
+```text
+Desenvolvedor
+      │
+      ▼
+ git add .
+      │
+      ▼
+git commit -m "feat: adiciona login"
+      │
+      ▼
+git push origin main
+      │
+      ▼
+ GitHub recebe o código
+      │
+      ▼
+ GitHub Actions inicia automaticamente
+      │
+      ▼
+ Compila o projeto
+      │
+      ▼
+ Executa os testes
+      │
+      ▼
+ Verifica se tudo passou
+      │
+      ▼
+ ✅ Tudo certo → Continua
+ ❌ Algum erro → Processo interrompido
+```
+
+---
