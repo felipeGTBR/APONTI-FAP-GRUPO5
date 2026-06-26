@@ -133,3 +133,5 @@ O GitHub Actions oferece diversas vantagens para equipes de desenvolvimento, pri
 - **Integração nativa com o GitHub:** não é necessário utilizar ferramentas externas para criar pipelines de automação.
 
 - **Suporte a diversas tecnologias:** funciona com diferentes linguagens de programação e frameworks, como Java, Python, JavaScript, C#, PHP, Go, entre outros.
+
+---
