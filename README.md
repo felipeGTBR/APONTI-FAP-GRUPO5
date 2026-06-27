@@ -2,6 +2,9 @@
 GitHub Actions e automação de processos
 
 ## 🤖 O que é o GitHub Actions?
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e729e7e8-d0f3-487b-aee9-ce40059481a0" alt="GitHub Actions" width="250">
+</p>
 
 O **GitHub Actions** é uma ferramenta do próprio GitHub que permite automatizar várias tarefas durante o desenvolvimento de um projeto. Em vez de executar algumas atividades manualmente, como rodar testes ou publicar uma nova versão da aplicação, é possível configurar o GitHub Actions para fazer isso automaticamente sempre que um evento acontecer, como um **push**, a abertura de um **Pull Request** ou a criação de uma **tag**.
 
