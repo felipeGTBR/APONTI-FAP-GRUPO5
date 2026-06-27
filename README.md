@@ -167,8 +167,6 @@ Depois disso entram em ação os **jobs**. Podemos imaginar cada job como um **b
 
 Cada **job** é dividido em várias **steps** (etapas), que funcionam como pequenas instruções executadas em sequência. Observe como isso acontece na imagem:
 
-Cada **job** é dividido em várias **steps** (etapas), que funcionam como pequenas instruções executadas em sequência. Observe como isso acontece na imagem:
-
 ```text
 Workflow
    │
