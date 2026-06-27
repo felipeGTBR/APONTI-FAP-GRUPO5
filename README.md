@@ -165,7 +165,22 @@ A imagem acima ilustra esse funcionamento. Observe que o processo acontece de ci
 
 Depois disso entram em ação os **jobs**. Podemos imaginar cada job como um **bloco de trabalho**, responsável por uma parte específica da automação. Em vez de concentrar todas as tarefas em um único lugar, o workflow pode ser dividido em diferentes jobs para deixar o processo mais organizado e facilitar sua manutenção.
 
-Cada job é formado por várias **steps** (etapas), que funcionam como pequenas instruções executadas em sequência. Na imagem, por exemplo, o primeiro job reúne as etapas de preparação e validação do projeto, como baixar o código, instalar as dependências e executar os testes. Já o segundo job é responsável pela construção (*build*) e publicação (*deploy*) da aplicação.
+Cada **job** é dividido em várias **steps** (etapas), que funcionam como pequenas instruções executadas em sequência. Observe como isso acontece na imagem:
+
+```text
+Job 1
+├── 📥 Baixar o código
+├── 📦 Instalar dependências
+└── 🧪 Executar testes
+          │
+          ▼
+   Tudo certo?
+          │
+         Sim
+          ▼
+Job 2
+├── 🏗️ Construir a aplicação (Build)
+└── 🚀 Publicar a aplicação (Deploy)
 
 É importante destacar que essa organização pode variar de acordo com o projeto. Alguns workflows possuem apenas um job com poucas etapas, enquanto outros são divididos em vários blocos de trabalho para automatizar processos mais complexos.
 
