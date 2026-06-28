@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # APONTI-FAP-GRUPO5
 
@@ -6,6 +7,8 @@ GitHub Actions e automação de processos
 
 # O GitHub Actions consolidou-se como uma das ferramentas mais poderosas para a automação do ciclo de vida de desenvolvimento de software (SDLC). Integrado nativamente ao ecossistema do GitHub, ele permite que desenvolvedores criem fluxos de trabalho personalizados que respondem a eventos específicos, como commits, aberturas de pull requests ou até mesmo agendamentos temporais. Essa flexibilidade elimina a necessidade de ferramentas externas complexas de CI/CD, centralizando a gestão do código e de sua respectiva automação em um único ambiente, o que reduz drasticamente a fricção operacional e melhora a visibilidade do projeto para toda a equipe.
 
+=======
+>>>>>>> main
 # Projeto de Automação com GitHub Actions - Grupo 5
 
 Este repositório foi desenvolvido para o curso de DevOps ministrado pela APONTI, com o objetivo de demonstrar a automação de processos utilizando o GitHub Actions.
@@ -416,7 +419,12 @@ _(integrante 6)_
 
 ## 📝 Conclusão
 
-_(integrante 7)_
-O GitHub Actions transforma a automação de processos em algo acessível, poderoso e nativamente integrado ao fluxo de desenvolvimento. Seja para projetos open-source ou corporativos, ele oferece uma solução completa e moderna para CI/CD, reduzindo a complexidade e acelerando a entrega de software com qualidade e confiabilidade.
+O GitHub Actions representa uma evolução significativa na forma como equipes de desenvolvimento organizam e automatizam seus processos. Ao longo deste projeto, exploramos como essa ferramenta permite configurar pipelines de CI/CD diretamente no repositório, eliminando a dependência de plataformas externas e simplificando o fluxo de trabalho.
+
+Vimos que, por meio de workflows escritos em YAML, é possível automatizar desde a execução de testes até o deploy da aplicação, garantindo que cada alteração enviada ao repositório passe por verificações automáticas antes de ser integrada ao projeto principal. Isso reduz erros, aumenta a confiabilidade do código e permite que os desenvolvedores foquem no que realmente importa: construir novas funcionalidades.
+
+Além disso, a organização em jobs e steps torna os workflows flexíveis e escaláveis, adaptando-se tanto a projetos simples quanto a pipelines mais complexas.
+
+Em suma, o GitHub Actions não é apenas uma ferramenta de automação — é uma mudança de mentalidade no desenvolvimento de software moderno, tornando o processo mais ágil, seguro e colaborativo.
 
 Automatize, teste, entregue — tudo dentro do GitHub. 🚀
