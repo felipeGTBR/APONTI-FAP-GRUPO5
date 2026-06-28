@@ -263,11 +263,11 @@ Nos últimos anos, houve uma grande mudança na estratégia das empresas de tecn
 
 O GitHub reflete exatamente essa evolução: o que antes era apenas um repositório de código, hoje se consolidou como uma plataforma de desenvolvimento completa (Developer Platform) graças à integração de diversas tecnologias. Abaixo estão listadas as principais tecnologias que sustentam o funcionamento do GitHub Actions.
 
-### 1. YAML (.yml ou .yaml)
-
-É a linguagem de serialização de dados usada para escrever os arquivos de configuração dos workflows (fluxos de trabalho). Todos os comandos, horários e passos que o GitHub Actions deve seguir são descritos em arquivos YAML dentro da pasta .github/workflows/.
-
-• Para que serve: é uma linguagem limpa, legível por humanos, baseada em indentação (espaçamentos), o que evita a complexidade de códigos cheios de chaves ou colchetes.
+### 1. YAML (`.yml` ou `.yaml`)
+ 
+É a linguagem de serialização de dados usada para escrever os arquivos de configuração dos workflows (fluxos de trabalho). Todos os comandos, horários e passos que o GitHub Actions deve seguir são descritos em arquivos YAML dentro da pasta `.github/workflows/`.
+ 
+- **Para que serve:** é uma linguagem limpa, legível por humanos, baseada em indentação (espaçamentos), o que evita a complexidade de códigos cheios de chaves ou colchetes.
 
 ### 2. Containers e Docker
  
