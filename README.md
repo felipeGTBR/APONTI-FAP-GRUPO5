@@ -275,6 +275,18 @@ O GitHub Actions é totalmente baseado em isolamento de ambiente. Quando o seu f
  
 - **Para que serve:** garante que os seus testes rodem em um ambiente idêntico todas as vezes, sem "vôos cegos" ou o famoso "na minha máquina funciona". Você pode rodar seus fluxos em containers de Node.js, Python, Ubuntu, etc.
 
+### 3. Ambientes de Execução (Runners)
+ 
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Windows_Server-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Server">
+  <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS">
+</p>
+Os Runners são as máquinas que realmente executam o código dos seus fluxos de automação. O GitHub Actions utiliza tecnologias de sistemas operacionais nativos para disponibilizar essas máquinas em nuvem:
+ 
+- **Linux (Ubuntu)** — o mais comum, rápido e leve.
+- **Windows Server** — para projetos que dependem do ecossistema .NET legado ou ferramentas específicas da Microsoft.
+- **macOS** — fundamental para quem compila aplicativos iOS (Swift/Objective-C) ou utilitários para Mac.
 
 ## 📝 Conclusão
 
