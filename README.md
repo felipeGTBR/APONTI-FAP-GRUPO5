@@ -265,11 +265,19 @@ O GitHub reflete exatamente essa evolução: o que antes era apenas um repositó
 
 ### 1. YAML (`.yml` ou `.yaml`)
  
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white" alt="YAML">
+</p>
+
 É a linguagem de serialização de dados usada para escrever os arquivos de configuração dos workflows (fluxos de trabalho). Todos os comandos, horários e passos que o GitHub Actions deve seguir são descritos em arquivos YAML dentro da pasta `.github/workflows/`.
  
 - **Para que serve:** é uma linguagem limpa, legível por humanos, baseada em indentação (espaçamentos), o que evita a complexidade de códigos cheios de chaves ou colchetes.
 
 ### 2. Containers e Docker
+
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</p>
  
 O GitHub Actions é totalmente baseado em isolamento de ambiente. Quando o seu fluxo começa a rodar, ele inicia uma máquina virtual limpa ou um container Docker.
  
