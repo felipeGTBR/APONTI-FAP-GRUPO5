@@ -204,7 +204,152 @@ Em resumo, um workflow funciona como um roteiro automatizado que orienta o GitHu
 
 ## 🛠️ Como rodar o projeto localmente
 
-_(integrante 4)_
+Esta seção foi elaborada com o objetivo de explicar de forma clara e detalhada como acessar e explorar o projeto em sua máquina local.
+
+Embora este repositório não seja uma aplicação executável (ou seja, não há um sistema para “rodar” como um programa tradicional), é possível cloná-lo, navegar por sua estrutura e compreender como a automação com **GitHub Actions** está organizada.
+
+---
+
+### ✅ Pré-requisitos
+
+Antes de começar, certifique-se de que você possui os seguintes itens instalados:
+
+- **Git** instalado na sua máquina
+  👉 Verifique com:
+
+  ```bash
+  git --version
+  ```
+
+- Um editor de código (recomendado: **Visual Studio Code**)
+  👉 Download: https://code.visualstudio.com/
+
+---
+
+### 1. Clonar o repositório
+
+O primeiro passo é baixar uma cópia do projeto para o seu computador.
+
+Abra o terminal (Prompt de Comando, PowerShell ou Terminal do VS Code) e execute:
+
+```bash
+git clone https://github.com/DiegoSouzaTech/APONTI-FAP-GRUPO5.git
+```
+
+Esse comando cria uma pasta com todos os arquivos do projeto no seu computador.
+
+---
+
+### 2. Acessar a pasta do projeto
+
+Após o download, entre na pasta criada com o comando:
+
+```bash
+cd APONTI-FAP-GRUPO5
+```
+
+Agora você já está dentro do diretório do projeto.
+
+---
+
+### 3. Abrir o projeto em um editor
+
+Para visualizar e editar os arquivos, abra o projeto em um editor de código.
+
+Se estiver utilizando o Visual Studio Code, execute:
+
+```bash
+code .
+```
+
+Caso utilize outro editor (como IntelliJ, Sublime ou Notepad++), basta abrir a pasta manualmente.
+
+---
+
+### 4. Entender a estrutura do projeto
+
+Ao abrir o projeto, você encontrará alguns arquivos e pastas importantes:
+
+- **README.md**
+  Arquivo principal do projeto. Contém toda a documentação explicando o objetivo do trabalho, conceitos de GitHub Actions e como a automação funciona.
+
+- **assets/**
+  Pasta utilizada para armazenar imagens que são exibidas na documentação.
+
+- **.github/workflows/** _(quando presente)_
+  Diretório responsável pelos arquivos de automação do GitHub Actions.
+  Aqui ficam os arquivos `.yml` que definem:
+  - Quando a automação será executada (ex: push, pull request)
+  - Quais etapas serão realizadas
+  - Scripts e comandos utilizados
+
+---
+
+### 5. Como “rodar” o projeto na prática
+
+Como este projeto é focado em **documentação e automação**, não existe um comando como `npm start` ou `python main.py`.
+
+O funcionamento principal acontece no GitHub, através dos workflows.
+
+Para testar ou visualizar isso na prática:
+
+1. Faça alguma alteração em um arquivo (por exemplo, no README.md)
+2. Salve a alteração
+3. Execute os comandos:
+
+```bash
+git add .
+git commit -m "teste de alteração"
+git push
+```
+
+4. Acesse o repositório no GitHub
+5. Vá até a aba **Actions**
+
+Lá você poderá ver a automação sendo executada em tempo real.
+
+---
+
+### 6. Acompanhar a automação no GitHub
+
+Na aba **Actions** do repositório, você pode visualizar:
+
+- Execuções recentes dos workflows
+- Status (✅ sucesso ou ❌ falha)
+- Tempo de execução
+- Logs detalhados de cada etapa
+- Possíveis erros e mensagens do sistema
+
+Essa funcionalidade é essencial para entender como funciona a **Integração Contínua (CI)**.
+
+---
+
+### 💡 Dica importante
+
+Se você estiver trabalhando em equipe, é recomendado criar uma branch antes de fazer alterações:
+
+```bash
+git checkout -b minha-branch
+```
+
+Depois disso, você pode enviar suas mudanças sem afetar diretamente a branch principal.
+
+---
+
+### Considerações finais
+
+Mesmo sendo um projeto educacional, ele segue práticas reais utilizadas no mercado, como:
+
+- Uso de Git e GitHub
+- Organização de documentação
+- Controle de versões com branches
+- Automação com GitHub Actions
+
+Esses conceitos são fundamentais para quem deseja trabalhar com desenvolvimento moderno e práticas de DevOps.
+
+---
+
+✅ Com isso, você já consegue clonar, explorar e entender completamente como o projeto funciona localmente e no GitHub.
 
 ## 🧪 Estrutura dos Testes
 
