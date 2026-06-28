@@ -404,7 +404,59 @@ Quando os testes falham dentro de um **pull request**, ele ganha uma sinalizaç�
 
 ## 💻 Tecnologias Utilizadas
 
-_(integrante 6)_
+Nos últimos anos, houve uma grande mudança na estratégia das empresas de tecnologia. Na década passada, era comum o mercado adotar ferramentas isoladas para resolver problemas específicos. Hoje, a tendência é a criação de ecossistemas integrados que centralizam processos. Isso reduz a complexidade de gerenciar inúmeras credenciais e simplifica a análise de logs, eliminando a necessidade de lidar com múltiplas plataformas.
+
+O GitHub reflete exatamente essa evolução: o que antes era apenas um repositório de código, hoje se consolidou como uma plataforma de desenvolvimento completa (Developer Platform) graças à integração de diversas tecnologias. Abaixo estão listadas as principais tecnologias que sustentam o funcionamento do GitHub Actions.
+
+### 1. YAML (`.yml` ou `.yaml`)
+ 
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white" alt="YAML">
+</p>
+
+É a linguagem de serialização de dados usada para escrever os arquivos de configuração dos workflows (fluxos de trabalho). Todos os comandos, horários e passos que o GitHub Actions deve seguir são descritos em arquivos YAML dentro da pasta `.github/workflows/`.
+ 
+- **Para que serve:** é uma linguagem limpa, legível por humanos, baseada em indentação (espaçamentos), o que evita a complexidade de códigos cheios de chaves ou colchetes.
+
+### 2. Containers e Docker
+
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</p>
+ 
+O GitHub Actions é totalmente baseado em isolamento de ambiente. Quando o seu fluxo começa a rodar, ele inicia uma máquina virtual limpa ou um container Docker.
+ 
+- **Para que serve:** garante que os seus testes rodem em um ambiente idêntico todas as vezes, sem "vôos cegos" ou o famoso "na minha máquina funciona". Você pode rodar seus fluxos em containers de Node.js, Python, Ubuntu, etc.
+
+### 3. Ambientes de Execução (Runners)
+ 
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Windows_Server-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Server">
+  <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS">
+</p>
+Os Runners são as máquinas que realmente executam o código dos seus fluxos de automação. O GitHub Actions utiliza tecnologias de sistemas operacionais nativos para disponibilizar essas máquinas em nuvem:
+ 
+- **Linux (Ubuntu)** — o mais comum, rápido e leve.
+- **Windows Server** — para projetos que dependem do ecossistema .NET legado ou ferramentas específicas da Microsoft.
+- **macOS** — fundamental para quem compila aplicativos iOS (Swift/Objective-C) ou utilitários para Mac.
+
+### 4. JavaScript / TypeScript (Node.js)
+ 
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+</p>
+Se você for criar uma Action personalizada para disponibilizar no Marketplace do GitHub, a tecnologia padrão recomendada para desenvolvimento dessas extensões é o Node.js (JavaScript/TypeScript). O GitHub fornece kits de desenvolvimento (SDKs) oficiais focados em Node.js para interagir com as APIs deles.
+
+### 5. APIs REST e GraphQL
+ 
+<p align=center style="margin-top:1em;margin-bottom:1em;">
+  <img src="https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST API">
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL">
+</p>
+O GitHub Actions se comunica intensamente com o resto da plataforma por meio de APIs. Quando um evento acontece (como um `pull_request` ou um `push`), os gatilhos disparam requisições internas usando REST e GraphQL para coletar dados sobre o repositório, commits e usuários.
 
 ## 📝 Conclusão
 
